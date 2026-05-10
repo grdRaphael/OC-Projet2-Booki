@@ -44,7 +44,7 @@ header img {
     height: 19px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     gap: 68px;
@@ -52,12 +52,12 @@ nav ul{
 
 /* Filter section*/
 
-h1{
+h1 {
     font-size: 22px;
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0px;
@@ -70,26 +70,26 @@ h2{
     margin: 35px 0;
 }
 
-.search-icon{
+.search-icon {
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 50px;
-    position:relative;
+    position: relative;
 }
 
-.search-icon i{
+.search-icon i {
     position: absolute;
     top: 15px;
     left: 18px;
 }
 
-#search{
+#search {
     border: 1px solid var(--main-bg-color);
     flex: 1;
 }
 
-#search::placeholder{
+#search::placeholder {
     font-size: 18px;
     font-weight: 700;
     color: black;
@@ -109,36 +109,69 @@ h2{
     transition: transform .3s ease;
 }
 
-.search-form button:active{
+
+
+.search-form button:active {
     transform: scale(0.97);
 }
 
-.filter-container{
+.filter-container {
     display: flex;
     align-items: center;
     margin-bottom: 35px;
 
 }
-.filter-container ul{
+
+.filter-container ul {
     display: flex;
     list-style: none;
     gap: 15px;
     margin: 0;
 }
 
-.filter-btn{
+.filter-btn {
     font-size: 16px;
     font-weight: bold;
     height: 50px;
     border-radius: 50px;
-    border: 1px solid #D9D9D9;
+    border: 2px solid #D9D9D9;
     background-color: transparent;
     padding: 4px 19px;
+    transition: background-color .3s ease, box-shadow .3s ease, border .3s ease, transform .3s ease;
 }
 
-.filter-btn span{
+.filter-btn:hover {
+    background-color: #DEEBFF;
+    box-shadow: 4px 4px 24px #DEEBFF;
+}
+
+.filter-btn:active {
+    transform: translateY(2px);
+}
+
+.filter-btn span {
     margin-right: 10px;
-    
+}
+
+.box-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: ;
+}
+
+.info-icons {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-info p{
+    margin: 0;
 }
 
 
