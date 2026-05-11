@@ -60,6 +60,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 16px 8px;
+    height: 79px;
 }
 
 header img {
@@ -73,12 +74,29 @@ nav ul {
     gap: 68px;
 }
 
+header a {
+    padding-top: 14px;
+    border-top: 3px solid transparent;
+    transition: color .3s ease, border-top .3s ease;
+}
+
+header a:hover{
+    color: var(--main-color);
+    border-top: 3px solid var(--main-color);
+}
+
 
 
 .hero {
     display: flex;
     flex-direction: column;
     gap: 35px;
+}
+
+.title-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /****** Formulaire de recherche ***********/
@@ -247,12 +265,13 @@ nav ul {
 .lodgings-cards .card {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .lodgings-cards img {
     height: 124px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .lodgings-cards .card-txt {
@@ -306,7 +325,7 @@ nav ul {
 }
 
 /****** Activity ***********/
-.activity {
+#activity {
     padding: 30px;
     display: flex;
     flex-direction: column;
