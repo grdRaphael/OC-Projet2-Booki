@@ -25,6 +25,13 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -221,8 +228,6 @@ nav ul {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    margin: 35px 0;
-
 }
 
 /****** Hebergements ***********/
@@ -327,6 +332,20 @@ nav ul {
 
 .activity-cards .card-txt {
     padding: 20px 19px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--main-bg-color);
+    gap: 30px;
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
 }
 
 
