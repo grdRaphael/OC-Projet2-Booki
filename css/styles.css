@@ -68,7 +68,7 @@ nav ul {
 
 
 
-.hero{
+.hero {
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -151,7 +151,7 @@ nav ul {
 
 .filter-btn:hover {
     background-color: #DEEBFF;
-    border : 2px solid transparent
+    border: 2px solid transparent
 }
 
 .filter-btn:active {
@@ -188,9 +188,10 @@ nav ul {
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 
 .card img {
     object-fit: cover;
@@ -232,24 +233,24 @@ nav ul {
     width: 65%;
 }
 
-.lodgings-cards{
+.lodgings-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.lodgings-cards .card{
+.lodgings-cards .card {
     display: flex;
     flex-direction: column;
 }
 
-.lodgings-cards img{
+.lodgings-cards img {
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.lodgings-cards .card-txt{
+.lodgings-cards .card-txt {
     display: flex;
     gap: 8px;
     flex-direction: column;
@@ -295,13 +296,38 @@ nav ul {
     gap: 5px;
 }
 
-
-
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
 
+/****** Activity ***********/
+.activity {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.activity-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.activity-cards .card {
+    padding: 0;
+    height: 439px;
+    overflow: hidden;
+}
+
+.activity-cards img {
+    height: 380px;
+    width: 100%;
+}
+
+.activity-cards .card-txt {
+    padding: 20px 19px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
