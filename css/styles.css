@@ -19,34 +19,43 @@
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    font-family: 'Raleway', sans-serif;
+.fa-location-dot {
+    color: black;
 }
 
-main{
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+.page {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
     display: flex;
     flex-direction: column;
     gap: 35px;
     margin-bottom: 35px;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
 }
 
-h1 {
+
+h1,
+h2 {
     font-size: 22px;
     font-weight: 700;
 }
 
-h2 {
+h3,
+.footer-links__title {
+    font-weight: 700;
     font-size: 16px;
-    font-weight: 400;
-
 }
 
 a {
@@ -59,8 +68,6 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 16px 8px;
-    height: 79px;
 }
 
 header img {
@@ -68,7 +75,13 @@ header img {
     height: 19px;
 }
 
+.logo-container {
+    padding: 30px 50px;
+}
+
+
 nav ul {
+    padding: 15px 50px 0;
     list-style: none;
     display: flex;
     gap: 68px;
@@ -80,7 +93,7 @@ header a {
     transition: color .3s ease, border-top .3s ease;
 }
 
-header a:hover{
+header a:hover {
     color: var(--main-color);
     border-top: 3px solid var(--main-color);
 }
@@ -93,10 +106,15 @@ header a:hover{
     gap: 35px;
 }
 
-.title-box{
+.title-box {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /****** Formulaire de recherche ***********/
@@ -123,6 +141,8 @@ header a:hover{
 #search {
     border: 1px solid var(--main-bg-color);
     flex: 1;
+    outline: none;
+    padding: 15px;
 }
 
 #search::placeholder {
@@ -149,6 +169,10 @@ header a:hover{
     transform: scale(0.97);
 }
 
+label {
+    display: none;
+}
+
 /****** Filters section ***********/
 .filter-container {
     display: flex;
@@ -156,11 +180,19 @@ header a:hover{
     gap: 15px;
 }
 
-.filter-container ul {
+.filter-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+fieldset {
+    border: none;
+}
+
+.filter-list {
     display: flex;
     list-style: none;
     gap: 15px;
-    margin: 0px;
 }
 
 .filter-btn {
@@ -175,7 +207,7 @@ header a:hover{
 }
 
 .filter-btn:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
     border: 2px solid transparent
 }
 
@@ -209,7 +241,7 @@ header a:hover{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-box);
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
@@ -225,7 +257,6 @@ header a:hover{
 .card-title {
     font-size: 16px;
 }
-
 
 
 .euro {
@@ -264,11 +295,13 @@ header a:hover{
 
 .lodgings-cards .card {
     display: flex;
+    height: 100%;
     flex-direction: column;
     overflow: hidden;
 }
 
 .lodgings-cards img {
+    width: 100%;
     height: 124px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -282,10 +315,12 @@ header a:hover{
 }
 
 
-
 /****** Populaires ***********/
 .popular {
     width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .popular-title {
@@ -294,9 +329,14 @@ header a:hover{
     align-items: center;
 }
 
+.popular-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .popular-cards .card {
     display: flex;
-    margin-top: 33px;
 }
 
 .popular-cards img {
@@ -340,7 +380,7 @@ header a:hover{
 
 .activity-cards .card {
     padding: 0;
-    height: 439px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -353,18 +393,23 @@ header a:hover{
     padding: 20px 19px;
 }
 
-footer{
+footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--main-bg-color);
     gap: 30px;
 }
 
-.footer-link{
+.footer-links {
     display: flex;
     flex-direction: column;
     padding: 20px;
     gap: 15px;
+    transition: color .3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--main-color)
 }
 
 
@@ -383,7 +428,7 @@ footer{
 
     .popular {
         width: 100%;
-        margin-top: 50px;
+
     }
 
     .popular-cards {
@@ -403,9 +448,118 @@ footer{
     .popular-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activity-cards img {
+        height: 200px;
+    }
+
+    .activity-cards .card-txt {
+        height: 70px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        padding: 30px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 0;
+    }
+
+    nav,
+    nav ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav li {
+        flex: 1;
+        text-align: center;
+    }
+
+    header a {
+        border: none;
+        width: 100%;
+        display: block;
+    }
+
+    header a:hover,
+    header a:active {
+        border-top: none;
+        padding-bottom: 15px;
+        border-bottom: 2px solid var(--main-color);
+
+    }
+
+
+    .main-container {
+        padding: 0;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .filter-container {
+        flex-wrap: wrap;
+    }
+
+    .filter-list {
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        width: ;
+    }
+
+
+    .lodgings-and-popular {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .lodgings-and-popular .popular {
+        border-radius: 0;
+    }
+
+    .lodgings-and-popular #lodgings {
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+
+    .popular-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular-cards a {
+        width: 100%;
+    }
+
+    .lodgings-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .activity-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
 }
