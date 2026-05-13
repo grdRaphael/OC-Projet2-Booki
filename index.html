@@ -18,7 +18,7 @@
     <div class="page">
         <header>
             <div class="logo-container">
-                <img src="/images/logo/Booki.png" alt="logo-booki" class="logo-booki">
+                <img src="./images/logo/Booki.png" alt="Booki" class="logo-booki">
             </div>
             <nav>
                 <ul>
@@ -35,7 +35,6 @@
                     <p class="subtitle">En plein centre ville ou en pleine nature</p>
                 </div>
 
-                <label for="search">Destination</label>
                 <form method="get" class="search-form">
                     <span class="search-icon"><i class="fa-solid fa-location-dot"></i></span>
                     <input id="search" type="search" placeholder="Marseille, France">
@@ -43,8 +42,8 @@
                 </form>
 
                 <div class="filter-container">
-                    <legend class="filter-title">Filtre</legend>
-                    <fieldset>
+                    <span class="filter-title">Filtres</span>
+                    
                         <ul class="filter-list">
                             <li>
                                 <button class="filter-btn">
@@ -67,7 +66,7 @@
                                 </button>
                             </li>
                         </ul>
-                    </fieldset>
+                   
                 </div>
 
                 <div class="box-info">
@@ -93,7 +92,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -110,7 +108,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -127,7 +124,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -144,7 +140,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -161,7 +156,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -178,15 +172,12 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
                         </a>
                     </div>
-                    <a href="#">
-                        <h3>Afficher plus</h3>
-                    </a>
+                    <a href="#" class="show-more">Afficher plus</a>
                 </section>
 
                 <section class="popular">
@@ -210,7 +201,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -230,7 +220,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -250,7 +239,6 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
                             </article>
@@ -295,24 +283,23 @@
                     </a>
                 </div>
             </section>
-
-
         </main>
+
         <footer>
             <div class="footer-links">
-                <span class="footer-links__title">À propos</span>
+                <h4 class="footer-links__title">À propos</h4>
                 <a href="#">Fonctionnement du site</a>
                 <a href="#">Conditions générales</a>
                 <a href="#">Données et confidentialité</a>
             </div>
             <div class="footer-links">
-                <span class="footer-links__title">Nos hébergements</span>
+                <h4 class="footer-links__title">Nos hébergements</h4>
                 <a href="#">Charte qualité</a>
                 <a href="#">Proposer votre hotel</a>
 
             </div>
             <div class="footer-links">
-                <span class="footer-links__title">Assistance</span>
+                <h4>Assistance</h4>
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous contacter</a>
             </div>
