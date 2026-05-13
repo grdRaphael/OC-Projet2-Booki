@@ -23,6 +23,14 @@
     color: black;
 }
 
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -158,7 +166,6 @@ header a:hover {
     outline: none;
     padding: 15px;
     flex: 1;
-    position: relative;
 }
 
 #search::placeholder {
@@ -429,11 +436,12 @@ footer {
     flex-direction: column;
     padding: 20px;
     gap: 15px;
-    transition: color .3s ease;
 }
 
+
+
 .footer-links a:hover {
-    color: var(--main-color)
+    color: var(--main-color);
 }
 
 
@@ -542,7 +550,7 @@ footer {
         z-index: 1;
     }
 
-    #search{
+    #search {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
