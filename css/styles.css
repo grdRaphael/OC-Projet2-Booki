@@ -427,6 +427,7 @@ footer {
 @media (max-width: 1024px) {
     .lodgings-and-popular {
         flex-direction: column;
+        gap: 50px;
     }
 
     #lodgings {
@@ -500,12 +501,10 @@ footer {
         display: block;
     }
 
-    header a:hover,
-    header a:active {
+    header a:hover{
         border-top: none;
         padding-bottom: 15px;
         border-bottom: 2px solid var(--main-color);
-
     }
 
 
