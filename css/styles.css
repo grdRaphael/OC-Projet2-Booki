@@ -37,12 +37,10 @@ body {
     justify-content: center;
     font-family: 'Raleway', sans-serif;
     background-color: white;
-}
-
-.page {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 
 main {
     display: flex;
@@ -137,6 +135,7 @@ header a:hover {
     display: flex;
     width: fit-content;
     position: relative;
+    height: 49px;
 }
 
 .search-icon {
@@ -176,6 +175,7 @@ header a:hover {
 
 
 .search-btn {
+    height: 49px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: var(--main-color);
@@ -547,6 +547,7 @@ footer {
     }
 
     .search-mobile-btn {
+        
         display: flex;
         justify-content: center;
         align-items: center;
